@@ -1,36 +1,64 @@
-<div style="background-color: white;">
 
-    <div class="container-fluid">
-      <div class="main-content">
-        <div class="logo-container">
-          
-        
-        </div>
+<div class="cards-container">
+  <!-- From Uiverse.io by Nawsome --> 
+
+
   
-        <div class="card-container">
-          <div class="card">
-            <input type="checkbox" id="toggle-info" class="toggle-info-checkbox">
-            <label for="toggle-info" class="card-img-label">
-              <img [src]="curso?.imagen" class="card" [alt]="curso?.nombre" width="100px">
-            </label>
-            <div class="card-content">
-              <div class="card-body">
-                <h5 class="card-title">{{ curso?.nombre }}</h5>
-                <p class="card-text"> {{ curso?.descripcion }}</p>
-                <p class="card-text"> {{ curso?.descripcion_completa }}</p>
-                <p class="card-text"> {{ curso?.funcionalidad }}</p>
-                <p class="card-text"> {{ curso?.video }}</p>
-                <a href="#" class="btn btn-primary">Compra</a>
-              </div>
+  <!-- From Uiverse.io by akshat-patel28 --> 
+  <div class="card">
+    <button class="continue-application">
+        <div>
+            <div class="pencil"></div>
+            <div class="folder">
+                <div class="top">
+                    <svg viewBox="0 0 24 27">
+                        <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+                    </svg>
+                </div>
+                <div class="paper"></div>
             </div>
-          </div>
         </div>
-  
-        
-      </div>
+        {{ curso?.nombre }}
+    </button>
+    
+    <div class="card-image-container">
+        <img src="imagenes/youtube.png" alt="logo" width="100px" height="100px">
+    </div>
+    <p class="card-title">Card Title</p>
+    <p class="card-des">
+        {{ curso?.video }}
+    </p>
+    <div class="card-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 384 512" stroke-width="0" fill="currentColor" stroke="currentColor">
+        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+      </svg>
+      <span class="card-btn-text">Watch Video</span>
     </div>
   </div>
 
 
+<!-- From Uiverse.io by zanina-yassine --> 
+<div class="card2">
+    <div class="container">
+      <div class="cloud front">
+        
+      </div>
+      
+      
+      <div class="cloud back">
+        
+      </div>
+    </div>
   
-  
+    <div class="card-header">
+      <span>{{ curso?.descripcion }}<br></span>
+      <span>{{ curso?.descripcion_completa }}</span>
+    </div>
+    <div class="itte">
+    <span class="temp">{{ curso?.nombre }}</span>
+    </div>
+    <div class="temp-scale">
+        <img [src]="curso?.imagen" class="im" [alt]="curso?.nombre" width="100px">
+    </div>
+  </div>
+</div>
