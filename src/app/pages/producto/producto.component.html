@@ -1,0 +1,36 @@
+<div style="background-color: white;">
+
+    <div class="container-fluid">
+      <div class="main-content">
+        <div class="logo-container">
+          
+        
+        </div>
+  
+        <div class="card-container">
+          <div class="card">
+            <input type="checkbox" id="toggle-info" class="toggle-info-checkbox">
+            <label for="toggle-info" class="card-img-label">
+              <img [src]="curso?.imagen" class="card" [alt]="curso?.nombre" width="100px">
+            </label>
+            <div class="card-content">
+              <div class="card-body">
+                <h5 class="card-title">{{ curso?.nombre }}</h5>
+                <p class="card-text"> {{ curso?.descripcion }}</p>
+                <p class="card-text"> {{ curso?.descripcion_completa }}</p>
+                <p class="card-text"> {{ curso?.funcionalidad }}</p>
+                <p class="card-text"> {{ curso?.video }}</p>
+                <a href="#" class="btn btn-primary">Compra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>
+    </div>
+  </div>
+
+
+  
+  

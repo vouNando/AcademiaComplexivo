@@ -1,0 +1,35 @@
+
+<div style="background-color: black;" >
+
+    <div class="header">
+      <nav class="nav">
+        <ul>
+          <li class="nav-link">
+            <a aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-link">
+            <a routerLink="/productos" routerLinkActive="active">Productos</a>
+          </li>
+          <li class="nav-link">
+            <a routerLink="/inscripcion" routerLinkActive="active">Inscripcions</a>
+          </li>
+          <li class="nav-link">
+            <a routerLink="/gestion" routerLinkActive="active">Gestion</a>
+          </li>
+          <li class="nav-link">
+            <a routerLink="/login" routerLinkActive="active">Login</a>
+          </li>
+          <img (click)="logout()" src="imagenes/salida.png" alt="logo" width="50px" height="50px">
+        
+    
+        </ul>
+        <ng-template #elsetemplate>
+            <button class="btn btn-outline-danger"
+            type="button"
+            (click)="logout()"
+            >Cerrar Sesión</button>
+            </ng-template>
+      </nav>
+    </div>
+    </div>
+    

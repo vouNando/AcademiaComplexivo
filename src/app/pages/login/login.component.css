@@ -1,0 +1,123 @@
+/* Estilo del contenedor principal */
+.con { 
+    background: url('/imagenes/gente.png') no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    height: 100vh; 
+    width: 100%; 
+    position: relative; 
+} 
+
+/* Estilo del recuadro */ 
+.wrapper { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 350px; 
+    padding: 20px; 
+    text-align: center; 
+    border: 1px solid rgb(241, 241, 241); 
+    border-radius: 12px; 
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */ 
+    backdrop-filter: blur(10px); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+} 
+
+/* Estilo del título */ 
+.wrapper h2 { 
+    font-size: 30px; 
+    color: #070707; 
+    margin-bottom: 20px; 
+} 
+
+/* Estilo del formulario en disposición horizontal */ 
+.form-horizontal { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+} 
+
+/* Agrupar campos de entrada y botones en una fila */ 
+.form-group { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+} 
+
+/* Estilo de los campos de entrada */ 
+.input-field { 
+    flex: 1; 
+} 
+
+.input-field input[type="email"], 
+.input-field input[type="password"] { 
+    border-radius: 10px; 
+    background: transparent; 
+    margin: 15px 0; 
+    border: 2px solid #fff; 
+    width: calc(100% - 0px); 
+    height: 40px; 
+    padding: 10px 20px; 
+    color: #fff; 
+    backdrop-filter: blur(15px); 
+} 
+
+/* Placeholder en los campos de entrada */ 
+input::placeholder { 
+    color: rgb(255, 255, 255); 
+} 
+
+/* Estilo de los botones */ 
+.form-buttons { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+} 
+
+.btn-black-white { 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+} 
+
+/* Efecto hover para los botones */ 
+.btn-black-white:hover { 
+    background-color: #333; 
+    transform: scale(1.05); 
+} 
+
+/* Enlaces debajo del formulario */ 
+.form-links { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-top: 20px; 
+} 
+
+/* Estilo del enlace "olvidó su contraseña" */ 
+a.forgot { 
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.712); 
+} 
+
+a.forgot:hover { 
+    text-decoration: underline; 
+    color: #fffffffd; 
+} 
+
+/* Estilo del enlace "registrarse" */ 
+a.Register { 
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.712); 
+} 
+
+a.Register:hover { 
+    text-decoration: underline; 
+    color: #fffffffd; 
+}
